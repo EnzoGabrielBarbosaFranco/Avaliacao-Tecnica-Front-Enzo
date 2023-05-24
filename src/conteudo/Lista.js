@@ -43,11 +43,11 @@ export default function BasicTable() {
         <Table sx={{ minWidth: 650, backgroundColor: '#ff821b', width: '95%', tableLayout: 'fixed' }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell style={{ fontSize: '15px' }}>ID</TableCell>
-              <TableCell align='center'>Nome do Responsável</TableCell>
-              <TableCell align="center">Dependente(s)</TableCell>
-              <TableCell align="center">Renda</TableCell>
-              <TableCell>Pontos Totais</TableCell>
+              <TableCell style={{ fontSize: '15px' }}>ID:</TableCell>
+              <TableCell align='center'>Nome do Responsável:</TableCell>
+              <TableCell align="center">Dependente(s):</TableCell>
+              <TableCell align="center">Renda:</TableCell>
+              <TableCell>Pontos Totais:</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
