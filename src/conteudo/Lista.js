@@ -39,8 +39,8 @@ export default function BasicTable() {
       <Typography variant="h2" component="div" align="center" style={{ marginTop: '220px', color: '#0BC0D3' }}>
         Desafio Digix Enzo
       </Typography>
-      <TableContainer component={Paper} style={{ marginTop: '70px', marginLeft: '45px' }}>
-        <Table sx={{ minWidth: 650, backgroundColor: '#ff821b', width: '95%', tableLayout: 'fixed' }} aria-label="simple table">
+      <TableContainer component={Paper} style={{ marginTop: '70px', marginLeft: '45px', boxShadow: 'none' }}>
+        <Table sx={{ minWidth: 650, backgroundColor: '#ff821b', width: '95%', tableLayout: 'fixed', borderRadius: '5px' }} aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell style={{ fontSize: '15px' }}>ID:</TableCell>
