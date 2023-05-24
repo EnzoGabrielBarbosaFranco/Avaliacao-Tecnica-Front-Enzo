@@ -36,58 +36,58 @@ export default function BasicTable() {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <div>
-        <Typography variant="h2" component="div" align="center" style={{ marginTop: '140px', color: '#0BC0D3' }}>
-          Pontuação das Famílias:
-        </Typography>
-        <TableContainer component={Paper} style={{ marginTop: '70px', boxShadow: 'none' }}>
-          <Table sx={{ minWidth: 650, backgroundColor: '#ff821b', width: 'auto', tableLayout: 'fixed', borderRadius: '5px' }} aria-label="simple table">
-            <TableHead>
-              <TableRow>
-                <TableCell style={{ fontSize: '15px', width: '10%' }}>
-                  <strong>
-                    ID:
-                  </strong>
+    <div>
+      <Typography variant="h2" component="div" align="center" style={{ marginTop: '140px', color: '#0BC0D3' }}>
+        Pontuação das Famílias:
+      </Typography>
+      <TableContainer component={Paper} style={{ marginTop: '70px', boxShadow: 'none' }}>
+        <Table sx={{ minWidth: 650, backgroundColor: '#ff821b', width: 'auto', tableLayout: 'fixed', borderRadius: '5px' }} aria-label="simple table">
+          <TableHead>
+            <TableRow>
+              <TableCell style={{ fontSize: '15px', width: '10%' }}>
+                <strong>
+                  ID:
+                </strong>
+              </TableCell>
+              <TableCell align='center' style={{ width: '30%' }}>
+                <strong>
+                  Nome do Responsável:
+                </strong>
+              </TableCell>
+              <TableCell align="center" style={{ width: '20%' }}>
+                <strong>
+                  Dependente(s):
+                </strong>
+              </TableCell>
+              <TableCell align="center" style={{ width: '20%' }}>
+                <strong>
+                  Renda:
+                </strong>
+              </TableCell>
+              <TableCell style={{ fontSize: '15px', width: '30%' }}>
+                  Pontos Totais:
+              </TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {rows.map((row) => (
+              <TableRow
+                key={row.id}
+                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              >
+                <TableCell component="th" scope="row" style={{ width: '10%' }}>
+                  {row.id}
                 </TableCell>
-                <TableCell align='center' style={{ width: '30%' }}>
-                  <strong>
-                    Nome do Responsável:
-                  </strong>
-                </TableCell>
-                <TableCell align="center" style={{ width: '20%' }}>
-                  <strong>
-                    Dependente(s):
-                  </strong>
-                </TableCell>
-                <TableCell align="center" style={{ width: '20%' }}>
-                  <strong>
-                    Renda:
-                  </strong>
-                </TableCell>
-                <TableCell style={{ fontSize: '15px', width: '30%' }}>
-                    Pontos Totais:
-                </TableCell>
+                <TableCell align='center' style={{ width: '30%' }}>{row.nomeResponsavel}</TableCell>
+                <TableCell align="center" style={{ width: '20%' }}>{row.numeroDependentes}</TableCell>
+                <TableCell align="center" style={{ width: '20%' }}>{row.rendaTotal}</TableCell>
+                <TableCell align="center" style={{ width: '20%' }}>{row.pontuacao}</TableCell>
               </TableRow>
-            </TableHead>
-            <TableBody>
-              {rows.map((row) => (
-                <TableRow
-                  key={row.id}
-                  sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                >
-                  <TableCell component="th" scope="row" style={{ width: '10%' }}>
-                    {row.id}
-                  </TableCell>
-                  <TableCell align='center' style={{ width: '30%' }}>{row.nomeResponsavel}</TableCell>
-                  <TableCell align="center" style={{ width: '20%' }}>{row.numeroDependentes}</TableCell>
-                  <TableCell align="center" style={{ width: '20%' }}>{row.rendaTotal}</TableCell>
-                  <TableCell align="center" style={{ width: '20%' }}>{row.pontuacao}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </div>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
     </div>
+  </div>
   );
 }
