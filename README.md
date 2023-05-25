@@ -8,4 +8,4 @@ Para ver meu projeto:
 npm start.            
 </strong>
 <br>
-![image](https://github.com/EnzoGabrielBarbosaFranco/Avaliacao-Tecnica-Front-Enzo/assets/101021951/a9e4eb1d-caa3-4a42-8706-603104c2c311)
+![image](https://github.com/EnzoGabrielBarbosaFranco/Avaliacao-Tecnica-Front-Enzo/assets/101021951/8f038ab9-0d79-4f1d-bdae-5fe3cefaffee)
